@@ -28,7 +28,15 @@ def hello(name):
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
+@app.route('/analyze/<word>')
+def analyze(word):
+    count = len(word)
+    return str(count)
 
+    # YOUR CODE HERE
+    # Count the characters in `word` and return as a string
+    # Example: /analyze/Drake  →  should display: 5
+    pass
 
 
 

@@ -47,8 +47,8 @@ def analyze(word):
     return render_template('analyze.html',
                            word=word,
                            num_chars=num_chars,
-                           num_vowels=num_vowels)
-                           reversed_word=reversed_word
+                           num_vowels=num_vowels
+                           reversed_word=reversed_word)
 
     # YOUR CODE HERE
     # Count the characters in `word` and return as a string

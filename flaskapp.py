@@ -41,11 +41,14 @@ def analyze(word):
     for char in word.lower():
         if char in "aeiou":
             num_vowels += 1
+
+    reversed_word = word[::-1]
     # render_template passes all variables into analyze.html
     return render_template('analyze.html',
                            word=word,
                            num_chars=num_chars,
                            num_vowels=num_vowels)
+                           reversed_word=reversed_word
 
     # YOUR CODE HERE
     # Count the characters in `word` and return as a string

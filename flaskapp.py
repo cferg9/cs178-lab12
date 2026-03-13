@@ -40,11 +40,13 @@ def analyze(word):
     # Reverse the word
     reversed_word = word[::-1]
 
-    return render_template('analyze.html',
-                           word=word,
-                           num_chars=num_chars,
-                           num_vowels=num_vowels,
-                           reversed_word=reversed_word)
+    return render_template(
+        'analyze.html',
+        word=word,
+        num_chars=num_chars,
+        num_vowels=num_vowels,
+        reversed_word=reversed_word
+    )
 
     # YOUR CODE HERE
     # Count the characters in `word` and return as a string

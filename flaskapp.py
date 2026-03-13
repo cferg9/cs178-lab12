@@ -30,7 +30,7 @@ def hello(name):
 # ============================================================
 @app.route('/analyze/<word>')
 def analyze(word):
-   num_chars = len(word)
+    num_chars = len(word)
 
     num_vowels = 0
     for char in word.lower():
